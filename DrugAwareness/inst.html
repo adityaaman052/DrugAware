@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Game Instructions</title>
+  <style>
+    body {
+      background: #f9fafb;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 20px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin: 30px 0 15px;
+      color: #34495e;
+    }
+
+    ul.instructions {
+      list-style: none;
+      padding: 0;
+      max-width: 700px;
+      text-align: left;
+    }
+
+    ul.instructions li {
+      background: #ecf0f1;
+      padding: 15px 20px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      line-height: 1.5;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    .blocks {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .block {
+      width: 180px;
+      height: 180px;
+      background: #fff;
+      border: 3px solid #3498db;
+      border-radius: 16px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #3498db;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      user-select: none;
+    }
+
+    .block:hover {
+      background: #3498db;
+      color: #fff;
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <h1>How to Play</h1>
+
+  <h2>Instructions</h2>
+  <ul class="instructions">
+    <li>There will be <strong>three blocks</strong> displayed on the screen.</li>
+    <li>Each block represents an <strong>option</strong> to choose from.</li>
+    <li>If you select the <strong>correct block</strong>, your character will move forward.</li>
+    <li>If you select the <strong>wrong block</strong>, your life will decrease.</li>
+    <li>Choose wisely and advance as far as you can!</li>
+  </ul>
+
+  <iframe
+    frameborder="0"
+    src="https://itch.io/embed/268964?linkback=true"
+    width="800"
+    height="600">
+    <a href="https://v6.itch.io/one-room-dungeon">Play One Room Dungeon on itch.io</a>
+  </iframe>
+
+  <footer>Good luck and have fun!</footer>
+</body>
+</html>
